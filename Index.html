@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Responsive Web Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#" class="top-nav-right">Login</a>
+      <a href="#" class="top-nav-right">SignUp</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <div class="container" id="section-1-gradient">
+      <div class="row">
+        <div class="col-6">
+          <div class="left-side-col">
+            <h1 class="large">Crazy Radness</h1>
+            <h1 class="large">Made for Devlopers</h1>
+          </div>
+          <form>
+            <div class="left-side-col">
+              <h2>Username</h2>
+              <input
+                class="inputbox"
+                type="text"
+                name="username"
+                placeholder="username"
+              />
+              <h2>Password</h2>
+              <input
+                class="inputbox"
+                type="text"
+                name="password"
+                placeholder="password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="right-side-col">
+            <div class="videocontainer">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/0cBvL1U9QNo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="section-2-header">
+      <h1>The Standard Of Awesomeness</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/7.1 devIcon.png.png" />
+            </div>
+            <label>Chat with Me</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempore nesciunt dolores officiis sint? Dolorum, ipsam. Est!
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/7.1 devIcon.png.png" />
+            </div>
+            <label>Learn To Code</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempore nesciunt dolores officiis sint? Dolorum, ipsam. Est!
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/7.1 devIcon.png.png" />
+            </div>
+            <label>Build an Empire</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempore nesciunt dolores officiis sint? Dolorum, ipsam. Est!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="learnmore">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate autem impedit velit maiores, amet eos veritatis
+              accusamus rerum totam non nulla quidem dignissimos molestias enim
+              eveniet, tempore harum iusto ut.
+            </p>
+          </article>
+        </div>
+        <div class="col-5">
+          <div class="slopeicon">
+            <img src="images/8.1 iOS_Slope.png.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-3 mobilestack">
+          <h1>Company</h1>
+          <ul>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobilestack">
+          <h1>Product</h1>
+          <ul>
+            <li>Computer</li>
+            <li>ipads</li>
+            <li>iphone</li>
+          </ul>
+        </div>
+        <div class="col-3 mobilestack">
+          <h1>Learn More</h1>
+          <ul>
+            <li>Developers</li>
+            <li>Designer</li>
+            <li>Hacker</li>
+          </ul>
+        </div>
+        <div class="col-3 mobilestack">
+          <h1>Support</h1>
+          <ul>
+            <li>Help</li>
+            <li>QA</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
